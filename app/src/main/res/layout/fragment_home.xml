@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context="com.example.mildred.expensetrackerv2.HomeFragment.HomeFragment">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp"
+        android:text="@string/summary"
+        android:textAllCaps="true"
+        android:textColor="@color/darkblue"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/algorithmLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:layout_marginLeft="10dp"
+         />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="20dp"
+        >
+<TableRow android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/income"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:id="@+id/income"
+         android:gravity="right"
+         android:textSize="20dp" />
+
+</TableRow>
+
+        <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expense"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expense"
+            android:gravity="right"
+            android:textSize="20dp" />
+    </TableRow>
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/balance"
+                android:gravity="right"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"/>
+
+
+
+</LinearLayout>

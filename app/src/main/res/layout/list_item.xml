@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:orientation="horizontal" >
+
+
+      <TextView
+        android:id="@+id/lblListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/lblAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <ProgressBar
+        android:id="@+id/pbstatus"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/percentText"
+        android:text=""
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf ="@id/lblListItem"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf ="@id/btn_edit"
+        android:text="@string/delete" />
+
+</LinearLayout>
